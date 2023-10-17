@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wirtualne Biuro Obsługi Klienta</title>
+</head>
+<body>
+    <script type="text/javascript">
+        <!--
+            function switch_form(type) {
+                if (type == 'login') {
+                    document.getElementById('logindata').style.display = '';
+                    document.getElementById('reminddata').style.display = 'none';
+                } else {
+                    document.getElementById('logindata').style.display = 'none';
+                    document.getElementById('reminddata').style.display = '';
+                }
+            }
+        
+            function show_email_phone(type) {
+                if (type == 'email') {
+                    document.getElementById('email').style.display = '';
+                    document.getElementById('phone').style.display = 'none';
+                } else {
+                    document.getElementById('email').style.display = 'none';
+                    document.getElementById('phone').style.display = '';
+                }
+            }
+        //-->
+    </script>
+    <div class="center">
+        <img src="./img/ndi_logo2.png" class="logo" alt="LOGO NDI" width="200px" height="100px">
+        <center>Panel Obsługi Abonenta</center>
+        <hr>
+        <!-- Formularz do logowania -->
+        <form id="login" method="post" action="?">
+            <table id="logindata" style="height: 100%; width: 100%;">
+    <tr>
+        <td class="text-right bold nobr" style="text-align:right;" width="40%">
+            ID klienta:
+        </td>
+        <td class="text-left">
+            <input type="text" name="loginform[login]" style="width: 100pt;" />
+        </td>
+    </tr>
+    <tr>
+        <td class="text-right bold nobr" style="text-align:right;">
+            PIN:
+        </td>
+        <td class="text-left">
+            <input type="password" name="loginform[pwd]" style="width: 100pt;" />
+        </td>
+    </tr>
+                    <tr>
+        <td colspan="2" class="text-center">
+            <center><input type="submit" name="loginform[submit]" class="bold" value="Zaloguj się" /></center>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="text-center bold nobr">
+            <hr>
+            <!-- <br /><a href="javascript:switch_form('remind');">Przypomnienie danych do logowania</a> -->
+            <center><a href="dalej.html">Przypomnienie danych do logowania</a></center>
+        </td>
+    </tr>
+</table>
+</form>
+<script type="text/javascript">
+    <!--
+    document.forms['login'].elements['loginform[login]'].focus();
+    //-->
+    </script>
+</div>
+</body>
+</html>
